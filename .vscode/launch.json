@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SistemaInternatoApplication<sistema_internato>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.internato.SistemaInternatoApplication",
+            "projectName": "sistema_internato",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
