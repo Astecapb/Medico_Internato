@@ -1,4 +1,5 @@
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\api\controller\AlocacaoController.java
+C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\api\controller\AlunoController.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\api\controller\LocalController.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\api\controller\PlantaoController.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\api\controller\SemestreController.java
@@ -14,6 +15,7 @@ C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\intern
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\config\FlywayConfig.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\config\SecurityConfig.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\domain\Alocacao.java
+C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\domain\Aluno.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\domain\Especialidade.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\domain\Falta.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\domain\Local.java
@@ -25,12 +27,14 @@ C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\intern
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\exception\BusinessException.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\exception\GlobalExceptionHandler.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\AlocacaoRepository.java
+C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\AlunoRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\EspecialidadeRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\LocalRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\PlantaoRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\SemestreRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\repository\UsuarioRepository.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\service\AlocacaoService.java
+C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\service\AlunoService.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\service\CheckinService.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\service\LocalService.java
 C:\Users\Robson\Downloads\Internato\Internato_Medico\src\main\java\br\com\internato\service\PlantaoService.java

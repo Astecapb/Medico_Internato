@@ -3,9 +3,7 @@ package br.com.internato.service;
 import br.com.internato.api.dto.response.AlocacaoResponse;
 import br.com.internato.repository.*;
 import lombok.*;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import br.com.internato.domain.Plantao;
@@ -31,6 +29,17 @@ public class PlantaoService {
         validarReferencias(plantao);
         return plantaoRepository.save(plantao);
     }
+
+ public List<Plantao> listar() {
+        return plantaoRepository.findAll();
+    }
+
+
+    // service
+public List<Plantao> listarPorAluno(Long alunoId) {
+        return plantaoRepository.findByAluno_Id(alunoId);
+    
+}
 
     public List<Plantao> listarPorSemestre(Long semestreId) {
         return plantaoRepository.findBySemestreId(semestreId);

@@ -7,7 +7,14 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-    boolean existsByEmail(String email);        // ← novo
+
+    boolean existsByEmail(String email);
+
     Optional<Usuario> findByEmail(String email);
-    List<Usuario> findByPerfil(Usuario.Perfil perfil);
+
+    // Busca usuários que possuem um perfil com o ID informado
+    List<Usuario> findByPerfil_Id(Long idPerfil);
+
+    // (opcional) já com o objeto Perfil
+    // List<Usuario> findByPerfil(Perfil perfil);
 }

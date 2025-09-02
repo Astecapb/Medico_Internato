@@ -1,20 +1,21 @@
-##
-http://localhost:8080/api/alunos
-###
+## Listar todos os alunos
+GET http://localhost:8080/api/alunos
+
+
+### CRIAR UM USUARIO DE PERFIL COORDENADOR
 curl -X POST http://localhost:8080/api/usuarios \
   -H "Content-Type: application/json" \
-  -d '{"nome":"Coord Ana","email":"ana@coord.com","senha":"123","papel":"COORDENADOR"}'
+  -d '{
+  "nome": "João Silva",
+  "email": "joao@mail.com",
+  "senha": "123456",
+  "perfil": {
+    "id": 1,
+    "nome": "COORDENADOR"
+  }
+}'
 
-  ###
-  POST https://example.com/comments HTTP/1.1
-content-type: application/json
-
-{
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-}
-
+### LISTAR TODOS OS USUARIOS
+GET http://localhost:8080/api/usuarios
 ###
-curl -X POST http://localhost:8080/api/usuarios \
-  -H "Content-Type: application/json" \
-  -d '{"nome":"Coord Ana","email":"ana@coord.com","senha":"123","papel":"COORDENADOR"}'
+GET http://localhost:8080/api/plantoes

@@ -30,4 +30,18 @@ public class PlantaoController {
     public List<AlocacaoResponse> listarAlocacoes(@PathVariable Long id) {
         return service.listarAlocacoes(id);
     }
+
+     @GetMapping
+    public List<Plantao> listar() {
+        return service.listar();
+    }
+
+    // controller
+    @GetMapping("/aluno/{alunoId}")
+    public List<Plantao> listarPorAluno(@PathVariable Long alunoId) {
+        return service.listarPorAluno(alunoId);
+}
+
+
+
 }

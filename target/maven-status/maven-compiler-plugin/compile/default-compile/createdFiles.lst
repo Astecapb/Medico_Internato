@@ -19,7 +19,6 @@ br\com\internato\api\dto\request\LocalRequest.class
 br\com\internato\api\dto\request\CriarPlantaoRequest.class
 br\com\internato\api\controller\UsuarioController.class
 br\com\internato\api\controller\AlocacaoController.class
-br\com\internato\api\controller\PlantaoController.class
 br\com\internato\service\SemestreService.class
 br\com\internato\config\FlywayConfig.class
 br\com\internato\domain\Plantao$PlantaoBuilder.class
@@ -33,7 +32,6 @@ br\com\internato\domain\Alocacao.class
 br\com\internato\api\dto\request\SemestreRequest.class
 br\com\internato\domain\Especialidade$EspecialidadeBuilder.class
 br\com\internato\repository\UsuarioRepository.class
-br\com\internato\service\PlantaoService$PlantaoServiceBuilder.class
 br\com\internato\api\controller\LocalController.class
 br\com\internato\domain\Alocacao$StatusAlocacao.class
 br\com\internato\api\dto\response\AlocacaoResponse.class
@@ -43,7 +41,6 @@ br\com\internato\repository\LocalRepository.class
 br\com\internato\domain\Local.class
 br\com\internato\domain\Semestre.class
 br\com\internato\domain\LocalEspecialidade.class
-br\com\internato\service\PlantaoService.class
 br\com\internato\domain\Falta.class
 br\com\internato\config\SecurityConfig.class
 br\com\internato\repository\EspecialidadeRepository.class

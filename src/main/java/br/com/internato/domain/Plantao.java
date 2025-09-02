@@ -42,10 +42,12 @@ public class Plantao {
     @JoinColumn(name = "preceptor_id")
     private Usuario preceptor;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "aluno_id")   // coluna FK na tabela plantoes
+    private Aluno aluno;
+    
     @Column(nullable = false)
     private Integer vagas;
-
-
 
     public LocalDateTime getDataHoraFim() {
         return dataHoraFim;
@@ -54,8 +56,6 @@ public class Plantao {
     public void setDataHoraFim(LocalDateTime dataHoraFim) {
         this.dataHoraFim = dataHoraFim;
     }
-
-
 
 
     public LocalDateTime getDataHoraInicio() {

@@ -1,5 +1,6 @@
 package br.com.internato.domain;
 
+import br.com.internato.domain.Perfil;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,13 +10,12 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Getter
-@Setter
 
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
     private Long id;
 
     @Column(nullable = false)
@@ -27,12 +27,12 @@ public class Usuario {
     @Column(nullable = false)
     private String senha; // armazenar hash BCrypt
 
-    @ManyToOne
-    @JoinColumn(name = "id_perfil") // chave estrangeira
-    private Perfil perfil;
+   @ManyToOne
+   @JoinColumn(name = "id_perfil")   // INTEGER no banco
+   private Perfil perfil;
 
 
-    public enum Perfil {
-        COORDENADOR, PRECEPTOR, ALUNO, SECRETARIA
-    }
+   // public enum Perfil {
+     //   COORDENADOR, PRECEPTOR, ALUNO, SECRETARIA
+    //}
 }

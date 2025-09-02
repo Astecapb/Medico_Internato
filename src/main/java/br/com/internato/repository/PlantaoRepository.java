@@ -7,4 +7,9 @@ import java.util.List;
 public interface PlantaoRepository extends JpaRepository<Plantao, Long> {
 
     List<Plantao> findBySemestreId(Long semestreId);
+    List<Plantao> findByPreceptor_Id(Long preceptorId);
+    List<Plantao> findByAluno_Id(Long alunoId);
+    //List<Plantao> findAll(Long semestreId);
+    
+
 }

@@ -33,9 +33,10 @@ public class UsuarioService {
                 .orElseThrow(() -> new BusinessException("Usuário não encontrado"));
     }
 
-    // Lista por papel (COORDENADOR, PRECEPTOR, ALUNO, SECRETARIA)
-    public List<Usuario> listarPorPerfil(Usuario.Perfil id_perfil) {
-        return repository.findByPerfil(id_perfil);
+    // Lista por perfil (COORDENADOR, PRECEPTOR, ALUNO, SECRETARIA)
+    // Lista por perfil via ID do perfil
+    public List<Usuario> listarPorPerfil(Long idPerfil) {
+    return repository.findByPerfil_Id(idPerfil);
     }
 
     // Buscar por e-mail

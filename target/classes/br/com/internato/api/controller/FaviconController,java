@@ -1,0 +1,9 @@
+@RestController
+public class FaviconController {
+
+    @GetMapping("favicon.ico")
+    @ResponseBody
+    void returnNoFavicon() {
+        // não faz nada, só evita o erro
+    }
+}
