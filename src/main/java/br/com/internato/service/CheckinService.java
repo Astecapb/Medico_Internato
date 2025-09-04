@@ -1,12 +1,14 @@
 package br.com.internato.service;
 
-import br.com.internato.domain.Alocacao;
-import br.com.internato.domain.Local;
-import br.com.internato.repository.*;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import java.time.Duration;
 import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
+
+import br.com.internato.domain.Alocacao;
+import br.com.internato.domain.Local;
+import br.com.internato.repository.AlocacaoRepository;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
@@ -14,8 +16,8 @@ public class CheckinService {
 
     private final AlocacaoRepository alocacaoRepository;
 
-    public void checkIn(Long alocacaoId, double lat, double lon) {
-        Alocacao a = alocacaoRepository.findById(alocacaoId)
+    public void checkIn(Long id_alocacao, double lat, double lon) {
+        Alocacao a = alocacaoRepository.findById(id_alocacao)
                 .orElseThrow(() -> new IllegalArgumentException("Alocação não encontrada"));
 
         validarDistancia(lat, lon, a.getPlantao().getLocal());
@@ -29,8 +31,8 @@ public class CheckinService {
 
    // }
 
-    public void checkOut(Long alocacaoId) {
-        Alocacao a = alocacaoRepository.findById(alocacaoId)
+    public void checkOut(Long id_alocacao) {
+        Alocacao a = alocacaoRepository.findById(id_alocacao)
                 .orElseThrow(() -> new IllegalArgumentException("Alocação não encontrada"));
 
         a.setCheckOut(LocalDateTime.now());

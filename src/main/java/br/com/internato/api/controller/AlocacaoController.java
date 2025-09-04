@@ -1,11 +1,22 @@
 package br.com.internato.api.controller;
 
 
-import br.com.internato.api.dto.request.*;
-import br.com.internato.domain.*;
-import br.com.internato.service.*;
-import org.springframework.http.*;
-import org.springframework.web.bind.annotation.*;
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.internato.api.dto.request.AlocacaoRequest;
+import br.com.internato.api.dto.response.AlocacaoResponse;
+import br.com.internato.domain.Alocacao;
+import br.com.internato.service.AlocacaoService;
 
 
 
@@ -18,6 +29,13 @@ public class AlocacaoController {
     public AlocacaoController(AlocacaoService service) {
         this.service = service;
     }
+
+@GetMapping
+    public List<AlocacaoResponse> listar() {
+        return null;
+        
+    }
+
 
     @PostMapping
     public ResponseEntity<Alocacao> alocar(@RequestBody AlocacaoRequest req) {

@@ -2,9 +2,9 @@
 spring:
   # Banco PostgreSQL
   datasource:
-    url: jdbc:postgresql://localhost:5432/internato
+    url: jdbc:postgresql://localhost:5432/internato_db
     username: postgres
-    password: admin
+    password: post1234
   jpa:
     hibernate:
       ddl-auto: validate        # usa Flyway – nunca cria tabelas via hbm2ddl
@@ -30,7 +30,6 @@ spring:
 # Porta padrão
 server:
   port: 8080
-
 # Logs úteis
 logging:
   level:

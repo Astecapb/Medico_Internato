@@ -1,6 +1,5 @@
 package br.com.internato.domain;
 
-import br.com.internato.domain.Perfil;
 import jakarta.persistence.*;
 import lombok.*;
 

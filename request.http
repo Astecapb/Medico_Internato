@@ -6,11 +6,11 @@ GET http://localhost:8080/api/alunos
 curl -X POST http://localhost:8080/api/usuarios \
   -H "Content-Type: application/json" \
   -d '{
-  "nome": "João Silva",
-  "email": "joao@mail.com",
-  "senha": "123456",
+  "nome": "Artur Silva",
+  "email": "artur@mail.com",
+  "senha": "12346",
   "perfil": {
-    "id": 1,
+    "id": 2,
     "nome": "COORDENADOR"
   }
 }'
@@ -18,4 +18,7 @@ curl -X POST http://localhost:8080/api/usuarios \
 ### LISTAR TODOS OS USUARIOS
 GET http://localhost:8080/api/usuarios
 ###
-GET http://localhost:8080/api/plantoes
+GET http://localhost:8080/api/alocacoes
+###
+curl -X GET http://localhost:8080/api/alocacoes
+
